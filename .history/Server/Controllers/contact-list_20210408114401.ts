@@ -24,7 +24,9 @@ export function DisplayEditPage(req:Request, res:Response, next:NextFunction):vo
 {
     let id = req.params.id;
 
+  // pass the id to the db
 
+  // db.contacts.find({"_id": id})
   Contact.findById(id, {}, {}, (err, contactToEdit) =>{
     if(err)
     {
