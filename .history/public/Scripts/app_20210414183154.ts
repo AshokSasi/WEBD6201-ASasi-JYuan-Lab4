@@ -109,6 +109,9 @@ namespace core
 
               localStorage.setItem(key, contact.serialize());
 
+
+
+
             }
 
           }

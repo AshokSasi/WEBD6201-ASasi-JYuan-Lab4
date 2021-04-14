@@ -84,36 +84,15 @@ namespace core
           {
             let contact = new core.Contact(fullName.value, contactNumber.value, emailAddress.value);
 
-
-           
-  //         ({
-  //          "FullName": req.body.FullName,
-  //           "ContactNumber": req.body.ContactNumber,
-  //       "EmailAddress": req.body.EmailAddress
-  // });
-
-  // // db.contacts.insert({contact data is here...})
-  // Contact.create(newContact, (err) => {
-  //   if(err)
-  //   {
-  //     console.error(err);
-  //     res.end(err);
-  //   }
-
-  //   res.redirect('/contact-list');
-  // });
-
             if(contact.serialize())
             {
               let key = contact.FullName.substring(0, 1) + Date.now();
 
               localStorage.setItem(key, contact.serialize());
-
             }
-
           }
 
-     
+          location.href = '/home';
         });
     }
 

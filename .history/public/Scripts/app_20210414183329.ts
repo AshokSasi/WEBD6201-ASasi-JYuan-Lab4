@@ -103,13 +103,16 @@ namespace core
   //   res.redirect('/contact-list');
   // });
 
-            if(contact.serialize())
-            {
-              let key = contact.FullName.substring(0, 1) + Date.now();
+            // if(contact.serialize())
+            // {
+            //   let key = contact.FullName.substring(0, 1) + Date.now();
 
-              localStorage.setItem(key, contact.serialize());
+            //   localStorage.setItem(key, contact.serialize());
 
-            }
+
+
+
+            // }
 
           }
 

@@ -36,11 +36,11 @@
             <%= displayName %>
           </span>
           <li id="loginListItem" class="nav-item">
-            <a id="logout" class="nav-link" aria-current="page" href="/logout"><i class="fas fa-sign-out-alt fa-lg"></i> Logout</a>
+            <a id="logout" class="nav-link" aria-current="page" href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
           </li>
           <% } else { %>
             <li id="loginListItem" class="nav-item">
-            <a id="login" class="nav-link <%= (page == 'login') ? 'active' : ''; %>" aria-current="page" href="/login"><i class="fas fa-sign-in-alt fa-lg"></i> Login</a>
+            <a id="login" class="nav-link <%= (page == 'login') ? 'active' : ''; %>" aria-current="page" href="/login"><i class="fas fa-sign-in-alt"></i> Login</a>
           </li>
           <% } %>
         </ul>

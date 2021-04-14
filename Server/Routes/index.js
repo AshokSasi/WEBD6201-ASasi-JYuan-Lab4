@@ -18,4 +18,5 @@ router.get('/register', index_1.DisplayRegisterPage);
 router.post('/login', index_1.ProcessLoginPage);
 router.get('/logout', index_1.ProcessLogoutPage);
 router.post('/register', index_1.ProcessRegisterPage);
+router.post('/contact', index_1.ProcessContactPage);
 //# sourceMappingURL=index.js.map

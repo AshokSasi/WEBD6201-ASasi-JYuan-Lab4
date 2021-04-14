@@ -59,7 +59,6 @@ var core;
                     localStorage.setItem(key, contact.serialize());
                 }
             }
-            location.href = '/contact';
         });
     }
     function displayContactList() {

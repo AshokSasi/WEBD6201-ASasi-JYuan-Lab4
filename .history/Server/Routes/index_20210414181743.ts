@@ -53,4 +53,4 @@ router.get('/logout', ProcessLogoutPage);
 /* Process login page - with /login */
 router.post('/register', ProcessRegisterPage);
 
-router.post('/contact', ProcessContactPage);
+router.post('/contact', DisplayHomePage);
