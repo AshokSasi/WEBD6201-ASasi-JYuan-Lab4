@@ -5,7 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProcessContactPage = exports.ProcessRegisterPage = exports.ProcessLogoutPage = exports.ProcessLoginPage = exports.DisplayRegisterPage = exports.DisplayLoginPage = exports.DisplayContactPage = exports.DisplayProjectsPage = exports.DisplayServicesPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
 const passport_1 = __importDefault(require("passport"));
-const contact_1 = __importDefault(require("../Models/contact"));
 const user_1 = __importDefault(require("../Models/user"));
 const index_1 = require("../Util/index");
 function DisplayHomePage(req, res, next) {
@@ -100,18 +99,7 @@ function ProcessRegisterPage(req, res, next) {
 }
 exports.ProcessRegisterPage = ProcessRegisterPage;
 function ProcessContactPage(req, res, next) {
-    let newContact = new contact_1.default({
-        "FullName": req.body.FullName,
-        "ContactNumber": req.body.ContactNumber,
-        "EmailAddress": req.body.EmailAddress
-    });
-    contact_1.default.create(newContact, (err) => {
-        if (err) {
-            console.error(err);
-            res.end(err);
-        }
-        res.redirect('/home');
-    });
+    res.render('index', { title: 'Home', page: 'home', displayName: index_1.UserDisplayName(req) });
 }
 exports.ProcessContactPage = ProcessContactPage;
 //# sourceMappingURL=index.js.map

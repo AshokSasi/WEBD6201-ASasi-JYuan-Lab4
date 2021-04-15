@@ -74,8 +74,6 @@ var core;
     }
     function displayLogin() {
     }
-    function displayRegister() {
-    }
     function Start() {
         let pageID = $("body")[0].getAttribute("id");
         switch (pageID) {
@@ -87,9 +85,6 @@ var core;
                 break;
             case 'login':
                 displayLogin();
-                break;
-            case 'register':
-                displayRegister();
                 break;
             case 'contact-list':
                 displayContactList();
