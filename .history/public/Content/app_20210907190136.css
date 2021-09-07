@@ -7,7 +7,7 @@ File: app.css
     text-align: center;
 }
 body.bg-image{
-    background-image : url('../Assets/images/bg-img.png');
+    background-image : url('../Assets/images/bg-img.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -24,8 +24,6 @@ body
     width: 100%;
     height: 100px;
     margin: 50px auto;
-   /* background-color: rgba(0, 0, 0, 0.7);*/
-    /*  background: linear-gradient(35deg,#160b52,#2f55d1,#3d68f5,0.7)*/
     background: linear-gradient(35deg, rgba(22, 11, 82, 0.5),rgba(47, 85, 209, 0.8),rgba(61, 104, 245, 1));
    
 }
@@ -103,9 +101,7 @@ footer{
 {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
-  /*   background-color: rgba(0, 0, 0, 0.5);*/
     background: linear-gradient(35deg, rgba(22, 11, 82, 0.5),rgba(47, 85, 209, 0.8),rgba(61, 104, 245, 1));
-   /* background-color: lightgrey;*/
     border-radius: .3rem;
     color:white;
 }
